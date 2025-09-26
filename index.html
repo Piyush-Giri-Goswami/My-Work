@@ -17,7 +17,7 @@
           justify-content: space-between;
          align-items: center;
          padding: 10px 20px;
-         background: color whitesmoke;
+         background: whitesmoke;
          color: rgb(0, 0, 0);
     }
     
@@ -382,6 +382,162 @@ html {
 html {
     scroll-behavior: smooth;
 }
+        /* Responsive Design */
+@media (max-width: 1024px) {
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navigation stack */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .logo {
+    width: 80px;
+    margin-right: 10px;
+  }
+
+  .logo-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .welcome-text,
+  .paragraph {
+    transform: none;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card h3 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .about-container {
+    padding: 20px 15px;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-description,
+  .about-list {
+    font-size: 1rem;
+  }
+
+  .about-quote {
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact .section-title {
+    font-size: 2rem;
+  }
+
+  .contact .section-description {
+    font-size: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    min-width: unset;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+  }
+
+  .back-to-top {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
 
         
     </style>
@@ -588,3 +744,4 @@ html {
 
 </body>
 </html>
+
