@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Evolution</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+        }
+        header {
+          display: flex;
+          justify-content: space-between;
+         align-items: center;
+         padding: 10px 20px;
+         background: color whitesmoke;
+         color: rgb(0, 0, 0);
+    }
+    
+    
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 600; /* Slightly bold for better visibility */
+    transition: color 0.3s ease;
+    position: relative; 
+    
+}
+
+
+.nav-links a:hover {
+    color: #00bfff; /* Highlight color on hover */
+}
+        
+        section {
+            padding: 60px 20px;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 70vh;
+            background: url("bg\ tech\ innovation.jpg") no-repeat center/cover;
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+            
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+           color: #fff;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            justify-content: center; /* Centers content vertically */
+            align-items: center; /* Centers content horizontally */
+            text-align: center; /* Centers text within the card */
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h5 {
+            padding: 15px;
+            font-size: 1.5rem;
+            margin: 0;
+
+        }
+        
+        .card p {
+            padding: 0 15px 15px;
+            color: #555;
+        }
+        /* Footer Styles */
+.footer {
+  background: linear-gradient(to right, #007BFF, #0056b3); /* Blue gradient */
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Columns */
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-about img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Quick Links */
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #ffcc00; /* Highlight color for hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+        
+ .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width:100px; /* Adjust as needed */
+    height: auto;
+    margin-right: 15px; /* Spacing between logo and title */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+.welcome-text {
+    position: relative;
+    transform: translateY(-200px); /* Moves text upward by 20px */
+}
+.paragraph {
+    transform: translateY(-210px); /* Adjust upward */
+            text-align: center;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+        /* About Us Section Styling */
+#about-us {
+  background: linear-gradient(135deg, #031532, #00BCD4); /* Dark Blue gradient for a tech feel */
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.about-container {
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent frosted glass effect */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading Styling */
+.about-heading {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  font-weight: bold;
+  background: linear-gradient(90deg, #eaeaea, #e7e5e4); /* Gold-Orange gradient for premium look */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Styling */
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* List Styling */
+.about-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 1.1rem;
+  margin: 20px auto;
+  color: #F5F5F5;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "•";
+  color: #FFC107; /* Gold bullet point */
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Quote Styling */
+.about-quote {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #FFD700; /* Gold text */
+  border-left: 4px solid #FFC107; /* Gold border for emphasis */
+  border-right: 4px solid #FFC107;
+  padding-left: 15px;
+  text-align: center;
+}
+/* Contact Section Styles */
+.contact {
+  background: linear-gradient(to bottom right, #007BFF, #0056b3); /* Blue gradient */
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact .section-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-left: -10px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form button {
+  width: 90%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(to right, #007BFF, #0056b3);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(to right, #0056b3, #007BFF);
+  transform: scale(1.05);
+}
+/* Basic styling for the "Back to Top" button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Add hover effect */
+.back-to-top{
+font-size: larger;
+background-color: #e7e5e4;
+}
+.back-to-top:hover {
+    background-color: #006eff;
+}
+
+/* Smooth scroll for browsers that support it */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+        
+    </style>
+</head>
+<body>
+<!-- Add this at the top of your page -->
+<a id="top"></a>
+
+<!-- Add this where you want the button -->
+<a href="#top" class="back-to-top">⬆️</a>
+
+    <!-- Header Section -->
+   
+
+    <header>
+        <div class="logo-container">
+            <img src="image (1).png" alt="Website Logo" class="logo">
+            <h1>Tech Innovations</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#innovations">Upcoming Innovations</a></li>
+                <li><a href="#current-innovations">Current Technology</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 class="welcome-text">Welcome to the Future</h2>
+        <p class="paragraph">Discover groundbreaking tech innovations shaping tomorrow.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-us">
+        <div class="about-container">
+          <h2 class="about-heading">About Us</h2>
+          <p class="about-description">
+            At <strong>TechEvolution</strong>, we believe that technology is the driving force behind progress. Our platform is dedicated to delivering curated insights into both emerging technologies of tomorrow and the groundbreaking innovations making headlines today.
+          </p>
+          <p class="about-description">
+            Whether you're a student, a professional, or simply a tech enthusiast, our goal is to keep you informed and inspired by exploring:
+          </p>
+          <ul class="about-list">
+            <li>The upcoming trends and inventions that promise to revolutionize industries.</li>
+            <li>The top technologies currently setting benchmarks in the world.</li>
+          </ul>
+          <p class="about-description">
+            Driven by curiosity and a passion for innovation, <strong>TechEvolution</strong> is your trusted guide to understanding how the tech of today and tomorrow impacts our world.
+          </p>
+           <!-- Highlighted Quote or Mission Statement -->
+    <blockquote class="about-quote">
+        "Empowering minds to envision and embrace the technologies shaping our future."
+      </blockquote>
+        </div>
+      </section>
+      
+    <!-- Innovations Section -->
+    <section id="innovations">
+        <h2>Upcoming Tech Innovations</h2>
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card"><a href="hydrogen train.html">
+                <img src="hydroegn-train-1731521567.jpg" alt=""></a>
+                <h3>Hydrogen Train</h3>
+                <p>The Hydrogen Train in India refers to a project that aims to introduce hydrogen-powered trains as an eco-friendly alternative
+                </p>
+               </div>
+            <!-- Card 2 -->
+            <div class="card"><a href="generative ai.html">
+                <img src="Screenshot generative ai2024-11-21 050526.png" alt=""></a>
+                <h3>Generative AI</h3>
+                <p>Generative AI, or generative artificial intelligence, is a type of AI that can create new content like text, images, videos, music, and audio</p>
+                </div>
+            <!-- Card 3 -->
+            <div class="card"><a href="robotic process.html">
+              <img src="Screenshot rpa 2024-11-21 051041.png" alt=""></a>
+              <h3>Robotic Process Automation (RPA)</h3>
+              <p>Robotic process automation (RPA) is a software technology that uses robots to automate tasks by mimicking human actions</p>
+          </div>
+             <!-- Card 4 -->
+            <div class="card"><a href="brain computer.html">
+                <img src="Screenshot bci 2024-11-20 075448.png" alt=""></a>
+                <h3>  (BCI)Brain Computer Interface</h3>
+                <p>Brain-Computer Interface (BCI) allows direct communication between the brain and external devices, enabling control of technology through thought alone. bypassing traditional methods of interaction like muscles or speech. </p>
+            </div>
+            <!-- Card 5 -->
+            
+            <div class="card"><a href="eco flights.html">
+                <img src="Screenshot  flight 2024-11-20 001212.png" alt=""></a>
+                <h3>Eco Friendly Flights</h3>
+                <p>Eco-friendly flights are flights that are made with the environment in mind. Eco-friendly flights aim to reduce environmental impact by using sustainable fuels, efficient aircraft, and optimized flight paths to lower emissions.</p>
+                 </div>
+            <!-- Card 6 -->
+            <div class="card"><a href="space based solar power.html">
+              <img src="Screenshot space 2024-11-21 051753.png" alt="Blockchain"></a>
+              <h3>Space-Based Solar Power (SBSP)</h3>
+              <p> Space-Based Solar Power (SBSP) is the concept of collecting solar energy in space and transmitting it to Earth, offering a constant, renewable energy source regardless of weather or daylight. To save electricity</p>
+             </div>
+    </section>
+
+    <!-- Current Innovation Section -->
+    <section id="current-innovations">
+        <h2>Current Technology</h2>
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card"><a href="apple vission pro.html">
+                <img src="apple vision pro.jpg" alt="AI Innovation"></a>
+                <h3>Apple Vision Pro</h3>
+                <p>Apple Vision Pro is designed to understand hand gestures from comfortable positions, like resting in your lap or on the sofa.</p>
+                </div>
+            <!-- Card 2 -->
+            <div class="card"><a href="delta pro.html">
+                <img src="Screenshot  eco flow 2024-11-20 002208.png" alt="Renewable Energy"></a>
+                <h3>Delta Pro</h3>
+                <p>DThe Delta Pro is a high-capacity portable power station by EcoFlow, designed for both home backup and outdoor use.</p>
+              </div>
+            <!-- Card 3 -->
+            <div class="card"><a href="cooking robot.html">
+                <img src="Screenshot chef magic 2024-11-20 002406.png" alt="Blockchain"></a>
+                <h3>Magic Cooking Robot</h3>
+                <p>Magic Cooking Robot is a versatile 7-in-1 kitchen robot that automates the cooking process with over 200 pre-loaded recipes.</p>
+              </div>
+             <!-- Card 4 -->
+             <div class="card"><a href="electriv vehicle.html">
+                <img src="Screenshot ev 2024-11-20 002542.png" alt="Innovation 4"></a>
+                <h3>Electic Vehicle</h3>
+                <p>An electric vehicle (EV) is a vehicle that uses an electric motor to run on electricity stored in a battery instead of a fossil fuel like gasoline or diesel.</p>
+              </div>
+            <!-- Card 5 -->
+            <div class="card"><a href="autonomes drones.html">
+              <img src="Screenshot drone 2024-11-20 234310.png" alt="Renewable Energy"></a>
+              <h3>Autonomous Drones</h3>
+              <p>Autonomous drones are unmanned aerial vehicles (UAVs) that use artificial intelligence (AI) to operate independently without a human pilot, without human control. </p>
+            </div>
+            <!-- Card 6 -->
+            <div class="card"><a href="biotechnology agriculture.html">
+              <img src="biotechnology.jpg" alt="Blockchain"></a>
+              <h3>Biotechnology In Agriculture</h3>
+              <p>Agricultural biotechnology, also known as agritech, is the use of scientific tools and techniques to modify living organisms in agriculture, pest resistance.</p>
+              </div> 
+              </section>
+
+    <!-- Contact Section -->
+    <section id="contact-us" class="contact">
+        <div class="container">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-description">
+            Have questions or suggestions? Reach out to us, and we'll get back to you as soon as possible.
+          </p>
+          <div class="contact-form">
+            <form action="#" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo and About -->
+          <div class="footer-about">
+            <img src="image (1).png" alt="TechEvolution Logo" class="footer-logo">
+            <p>
+              TechEvolution is your gateway to the future of technology. Stay updated with the latest and upcoming innovations shaping our world.
+            </p>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#current-innovations">Current Technology</a></li>
+              <li><a href="#innovations">Upcoming Innovations</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+          </div>
+          
+          <!-- Contact Info -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>Email: <a href="mailto:dezyneecole@gmail.com">dezyneecole@gmail.com</a></li>
+              <li>Phone: (+91) 98290 24839</li>
+              <li>Address: 106/10 Civil Lines
+                Ajmer, Rajasthan 305001</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 TechEvolution. All rights reserved.</p>
+        </div>
+      </footer>
+      
+
+</body>
+</html>
